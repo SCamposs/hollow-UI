@@ -1,0 +1,376 @@
+{
+  "button": {
+    "name": "button",
+    "files": [
+      {
+        "path": "components/ui/button.tsx",
+        "content": "registry/ui/button.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": [
+      "class-variance-authority",
+      "clsx",
+      "tailwind-merge",
+      "@radix-ui/react-slot"
+    ],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "badge": {
+    "name": "badge",
+    "files": [
+      {
+        "path": "components/ui/badge.tsx",
+        "content": "registry/ui/badge.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["class-variance-authority", "clsx", "tailwind-merge"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "card": {
+    "name": "card",
+    "files": [
+      {
+        "path": "components/ui/card.tsx",
+        "content": "registry/ui/card.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "input": {
+    "name": "input",
+    "files": [
+      {
+        "path": "components/ui/input.tsx",
+        "content": "registry/ui/input.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "label": {
+    "name": "label",
+    "files": [
+      {
+        "path": "components/ui/label.tsx",
+        "content": "registry/ui/label.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "@radix-ui/react-label"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "checkbox": {
+    "name": "checkbox",
+    "files": [
+      {
+        "path": "components/ui/checkbox.tsx",
+        "content": "registry/ui/checkbox.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": [
+      "clsx",
+      "tailwind-merge",
+      "@radix-ui/react-checkbox",
+      "lucide-react"
+    ],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "switch": {
+    "name": "switch",
+    "files": [
+      {
+        "path": "components/ui/switch.tsx",
+        "content": "registry/ui/switch.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "@radix-ui/react-switch"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "select": {
+    "name": "select",
+    "files": [
+      {
+        "path": "components/ui/select.tsx",
+        "content": "registry/ui/select.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": [
+      "clsx",
+      "tailwind-merge",
+      "@radix-ui/react-select",
+      "lucide-react"
+    ],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "table": {
+    "name": "table",
+    "files": [
+      {
+        "path": "components/ui/table.tsx",
+        "content": "registry/ui/table.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "dialog": {
+    "name": "dialog",
+    "files": [
+      {
+        "path": "components/ui/dialog.tsx",
+        "content": "registry/ui/dialog.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": [
+      "clsx",
+      "tailwind-merge",
+      "@radix-ui/react-dialog",
+      "lucide-react"
+    ],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "popover": {
+    "name": "popover",
+    "files": [
+      {
+        "path": "components/ui/popover.tsx",
+        "content": "registry/ui/popover.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "@radix-ui/react-popover"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "accordion": {
+    "name": "accordion",
+    "files": [
+      {
+        "path": "components/ui/accordion.tsx",
+        "content": "registry/ui/accordion.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": [
+      "clsx",
+      "tailwind-merge",
+      "@radix-ui/react-accordion",
+      "lucide-react"
+    ],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "dropdown-menu": {
+    "name": "dropdown-menu",
+    "files": [
+      {
+        "path": "components/ui/dropdown-menu.tsx",
+        "content": "registry/ui/dropdown-menu.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": [
+      "clsx",
+      "tailwind-merge",
+      "@radix-ui/react-dropdown-menu",
+      "lucide-react"
+    ],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "sonner": {
+    "name": "sonner",
+    "files": [
+      {
+        "path": "components/ui/sonner.tsx",
+        "content": "registry/ui/sonner.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["sonner", "next-themes"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "header": {
+    "name": "header",
+    "files": [
+      {
+        "path": "components/ui/header.tsx",
+        "content": "registry/ui/Header.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "footer": {
+    "name": "footer",
+    "files": [
+      {
+        "path": "components/ui/footer.tsx",
+        "content": "registry/ui/Footer.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "navigation": {
+    "name": "navigation",
+    "files": [
+      {
+        "path": "components/ui/navigation.tsx",
+        "content": "registry/ui/Navigation.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "status-badge": {
+    "name": "status-badge",
+    "files": [
+      {
+        "path": "components/ui/status-badge.tsx",
+        "content": "registry/ui/StatusBadge.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react"],
+    "registryDependencies": [],
+    "type": "components:ui"
+  },
+  "header-button": {
+    "name": "header-button",
+    "files": [
+      {
+        "path": "components/ui/header-button.tsx",
+        "content": "registry/ui/HeaderButton.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react"],
+    "registryDependencies": ["button"],
+    "type": "components:ui"
+  },
+  "header-stats": {
+    "name": "header-stats",
+    "files": [
+      {
+        "path": "components/ui/header-stats.tsx",
+        "content": "registry/ui/HeaderStats.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react"],
+    "registryDependencies": ["card"],
+    "type": "components:ui"
+  },
+  "info-card": {
+    "name": "info-card",
+    "files": [
+      {
+        "path": "components/ui/info-card.tsx",
+        "content": "registry/ui/InfoCard.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react"],
+    "registryDependencies": ["card"],
+    "type": "components:ui"
+  },
+  "stat-card": {
+    "name": "stat-card",
+    "files": [
+      {
+        "path": "components/ui/stat-card.tsx",
+        "content": "registry/ui/StatCard.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react"],
+    "registryDependencies": ["card"],
+    "type": "components:ui"
+  },
+  "back-to-top-button": {
+    "name": "back-to-top-button",
+    "files": [
+      {
+        "path": "components/ui/back-to-top-button.tsx",
+        "content": "registry/ui/BackToTopButton.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react"],
+    "registryDependencies": ["button"],
+    "type": "components:ui"
+  },
+  "multi-select": {
+    "name": "multi-select",
+    "files": [
+      {
+        "path": "components/ui/multi-select.tsx",
+        "content": "registry/ui/multi-select.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react"],
+    "registryDependencies": [
+      "command",
+      "popover",
+      "badge",
+      "button",
+      "checkbox"
+    ],
+    "type": "components:ui"
+  },
+  "calendar-input": {
+    "name": "calendar-input",
+    "files": [
+      {
+        "path": "components/ui/calendar-input.tsx",
+        "content": "registry/ui/calendar-input.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react", "date-fns"],
+    "registryDependencies": ["button", "input", "popover", "calendar"],
+    "type": "components:ui"
+  },
+  "file-upload-area": {
+    "name": "file-upload-area",
+    "files": [
+      {
+        "path": "components/ui/file-upload-area.tsx",
+        "content": "registry/ui/file-upload-area.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react"],
+    "registryDependencies": ["button", "label"],
+    "type": "components:ui"
+  }
+}

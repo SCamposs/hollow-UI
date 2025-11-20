@@ -1,0 +1,57 @@
+# Development files
+src/app/
+src/components/layout/
+src/contexts/
+.next/
+.vscode/
+node_modules/
+
+# Config files
+*.config.js
+*.config.ts
+*.config.mjs
+!tsup.config.ts
+.env*
+.gitignore
+
+# Documentation and examples (keep README.md)
+docs/
+examples/
+screenshots/
+*.md
+!README.md
+
+# Test files
+__tests__/
+*.test.*
+*.spec.*
+coverage/
+
+# Build artifacts not needed
+.turbo/
+.cache/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Temporary folders
+tmp/
+temp/

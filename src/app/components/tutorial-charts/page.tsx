@@ -593,7 +593,7 @@ export default function TutorialChartsPage() {
                       radius={[4, 4, 0, 0]}
                     />
                     <Bar
-                      dataKey="problemas"
+                      dataKey="abertos"
                       fill="var(--chart-3)"
                       radius={[4, 4, 0, 0]}
                     />
@@ -627,8 +627,8 @@ const chartConfig = {
     label: "Problemas Resolvidos", 
     color: "var(--chart-2)",
   },
-  problemas: {
-    label: "Problemas",
+  abertos: {
+    label: "Problemas Abertos",
     color: "var(--chart-3)",
   },
 };

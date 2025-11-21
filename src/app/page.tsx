@@ -56,7 +56,7 @@ export default function Home() {
               <Button
                 variant="secondary"
                 size="lg"
-                className="min-w-25 hover:bg-muted dark:hover:text-white dark:hover:bg-primary"
+                className="min-w-25 hover:opacity-80 transition-opacity duration-200 "
               >
                 Documentação CLI
               </Button>

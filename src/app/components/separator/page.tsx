@@ -266,7 +266,9 @@ export default function SeparatorPage() {
                       <td className="py-3 pr-4 font-mono text-xs">
                         orientation
                       </td>
-                      <td className="py-3 pr-4">&quot;horizontal&quot; | &quot;vertical&quot;</td>
+                      <td className="py-3 pr-4">
+                        &quot;horizontal&quot; | &quot;vertical&quot;
+                      </td>
                       <td className="py-3 pr-4">&quot;horizontal&quot;</td>
                       <td className="py-3">Orientação do separator</td>
                     </tr>

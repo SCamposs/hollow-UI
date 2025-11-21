@@ -483,13 +483,17 @@ import { Bold } from "lucide-react"
                   <tbody className="divide-y">
                     <tr>
                       <td className="py-3 pr-4 font-mono text-xs">variant</td>
-                      <td className="py-3 pr-4">&quot;default&quot; | &quot;outline&quot;</td>
+                      <td className="py-3 pr-4">
+                        &quot;default&quot; | &quot;outline&quot;
+                      </td>
                       <td className="py-3 pr-4">&quot;default&quot;</td>
                       <td className="py-3">Estilo visual do toggle</td>
                     </tr>
                     <tr>
                       <td className="py-3 pr-4 font-mono text-xs">size</td>
-                      <td className="py-3 pr-4">&quot;default&quot; | &quot;sm&quot; | &quot;lg&quot;</td>
+                      <td className="py-3 pr-4">
+                        &quot;default&quot; | &quot;sm&quot; | &quot;lg&quot;
+                      </td>
                       <td className="py-3 pr-4">&quot;default&quot;</td>
                       <td className="py-3">Tamanho do toggle</td>
                     </tr>
@@ -566,7 +570,9 @@ import { Bold } from "lucide-react"
                   <tbody className="divide-y">
                     <tr>
                       <td className="py-3 pr-4 font-mono text-xs">type</td>
-                      <td className="py-3 pr-4">&quot;single&quot; | &quot;multiple&quot;</td>
+                      <td className="py-3 pr-4">
+                        &quot;single&quot; | &quot;multiple&quot;
+                      </td>
                       <td className="py-3 pr-4">-</td>
                       <td className="py-3">Modo de seleção (obrigatório)</td>
                     </tr>
@@ -598,13 +604,17 @@ import { Bold } from "lucide-react"
                     </tr>
                     <tr>
                       <td className="py-3 pr-4 font-mono text-xs">variant</td>
-                      <td className="py-3 pr-4">&quot;default&quot; | &quot;outline&quot;</td>
+                      <td className="py-3 pr-4">
+                        &quot;default&quot; | &quot;outline&quot;
+                      </td>
                       <td className="py-3 pr-4">&quot;default&quot;</td>
                       <td className="py-3">Estilo visual dos itens</td>
                     </tr>
                     <tr>
                       <td className="py-3 pr-4 font-mono text-xs">size</td>
-                      <td className="py-3 pr-4">&quot;default&quot; | &quot;sm&quot; | &quot;lg&quot;</td>
+                      <td className="py-3 pr-4">
+                        &quot;default&quot; | &quot;sm&quot; | &quot;lg&quot;
+                      </td>
                       <td className="py-3 pr-4">&quot;default&quot;</td>
                       <td className="py-3">Tamanho dos itens</td>
                     </tr>
@@ -656,13 +666,17 @@ import { Bold } from "lucide-react"
                     </tr>
                     <tr>
                       <td className="py-3 pr-4 font-mono text-xs">variant</td>
-                      <td className="py-3 pr-4">&quot;default&quot; | &quot;outline&quot;</td>
+                      <td className="py-3 pr-4">
+                        &quot;default&quot; | &quot;outline&quot;
+                      </td>
                       <td className="py-3 pr-4">Herda do grupo</td>
                       <td className="py-3">Sobrescreve variante do grupo</td>
                     </tr>
                     <tr>
                       <td className="py-3 pr-4 font-mono text-xs">size</td>
-                      <td className="py-3 pr-4">&quot;default&quot; | &quot;sm&quot; | &quot;lg&quot;</td>
+                      <td className="py-3 pr-4">
+                        &quot;default&quot; | &quot;sm&quot; | &quot;lg&quot;
+                      </td>
                       <td className="py-3 pr-4">Herda do grupo</td>
                       <td className="py-3">Sobrescreve tamanho do grupo</td>
                     </tr>
@@ -725,11 +739,12 @@ import { Bold } from "lucide-react"
                   <li>Sempre forneça aria-label descritivo para ícones</li>
                   <li>Use ToggleGroup para opções relacionadas</li>
                   <li>
-                    type=&quot;single&quot; quando apenas uma opção pode estar ativa
+                    type=&quot;single&quot; quando apenas uma opção pode estar
+                    ativa
                   </li>
                   <li>
-                    type=&quot;multiple&quot; quando várias opções podem estar ativas
-                    simultaneamente
+                    type=&quot;multiple&quot; quando várias opções podem estar
+                    ativas simultaneamente
                   </li>
                   <li>Prefira ícones reconhecíveis do lucide-react</li>
                   <li>Mantenha o estado pressionado visualmente claro</li>

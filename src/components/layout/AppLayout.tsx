@@ -64,10 +64,20 @@ export function AppLayout({ children }: AppLayoutProps) {
             </Link>
             <div className="flex items-center space-x-3">
               <BasicThemeToggleHeader />
-              <Button variant="outline" size="sm" className="hover:bg-primary">
-                <FaGithub className="mr-2 h-4 w-4" />
-                GitHub
-              </Button>
+              <Link
+                href="https://github.com/SCamposs/hollow-UI#hollow-UI"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button
+                  variant="outline"
+                  size="sm"
+                  className="hover:bg-primary"
+                >
+                  <FaGithub className="mr-2 h-4 w-4" />
+                  GitHub
+                </Button>
+              </Link>
               <Badge variant="outline" className="text-xs">
                 v1.0.0
               </Badge>

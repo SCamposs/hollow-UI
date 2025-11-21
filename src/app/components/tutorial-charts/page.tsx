@@ -1063,10 +1063,10 @@ import { BarChart, Bar, PieChart, Pie, LineChart, Line, XAxis, YAxis, Cell } fro
 
 // Dados de exemplo
 const performanceData = [
-  { month: "Jan", kpi1: 85, kpi2: 72, kpi3: 68, kpi4: 91 },
-  { month: "Fev", kpi1: 88, kpi2: 75, kpi3: 71, kpi4: 89 },
-  { month: "Mar", kpi1: 92, kpi2: 78, kpi3: 74, kpi4: 87 },
-  { month: "Abr", kpi1: 87, kpi2: 81, kpi3: 77, kpi4: 93 },
+  { month: "Jan", metric1: 85, metric2: 72, metric3: 68, metric4: 91 },
+  { month: "Fev", metric1: 88, metric2: 75, metric3: 71, metric4: 89 },
+  { month: "Mar", metric1: 92, metric2: 78, metric3: 74, metric4: 87 },
+  { month: "Abr", metric1: 87, metric2: 81, metric3: 77, metric4: 93 },
 ];
 
 const statusDistribution = [

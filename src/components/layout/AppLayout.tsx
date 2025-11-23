@@ -73,6 +73,8 @@ export function AppLayout({ children }: AppLayoutProps) {
                   variant="outline"
                   size="sm"
                   className="hover:bg-primary"
+                  disabled={true}
+                  title="Repositório do hollow-UI no GitHub atualmente privado"
                 >
                   <FaGithub className="mr-2 h-4 w-4" />
                   GitHub

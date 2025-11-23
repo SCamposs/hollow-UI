@@ -163,14 +163,14 @@ export default function BackToTopButtonPage() {
                       <span className="text-muted-foreground">string</span>
                     </div>
                     <p className="text-muted-foreground text-xs">
-                      Controla o posicionamento horizontal. Default: "right-4"
+                      Controla o posicionamento horizontal. Default: &quot;right-4&quot;
                     </p>
                     <div className="flex justify-between">
                       <code>offsetBottom?</code>
                       <span className="text-muted-foreground">string</span>
                     </div>
                     <p className="text-muted-foreground text-xs">
-                      Controla o posicionamento vertical. Default: "bottom-22"
+                      Controla o posicionamento vertical. Default: &quot;bottom-22&quot;
                     </p>
                   </div>
                 </div>

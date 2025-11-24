@@ -10,6 +10,7 @@ import Image from "next/image";
 import { Sidebar } from "./Sidebar";
 import { usePathname } from "next/navigation";
 import { BasicThemeToggleHeader } from "../ui/BasicThemeToggleHeader";
+import { LockIcon } from "lucide-react";
 
 interface AppLayoutProps {
   children: React.ReactNode;
@@ -73,11 +74,11 @@ export function AppLayout({ children }: AppLayoutProps) {
                   variant="outline"
                   size="sm"
                   className="hover:bg-primary"
-                  disabled={true}
                   title="Repositório do hollow-UI no GitHub atualmente privado"
                 >
                   <FaGithub className="mr-2 h-4 w-4" />
                   GitHub
+                  <LockIcon className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Badge variant="outline" className="text-xs">

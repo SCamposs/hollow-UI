@@ -365,6 +365,20 @@ export default function ComponentsPage() {
             </div>
 
             <div>
+              <h3 className="text-lg font-semibold mb-2">Via CLI</h3>
+              <section className="space-y-4 mb-8">
+                <CodeBlock
+                  title="Inicializar projeto"
+                  code="npx @scmposs/hollow-ui init"
+                />
+                <CodeBlock
+                  title="Adicionar componentes"
+                  code="npx @scmposs/hollow-ui add button card badge"
+                />
+              </section>
+            </div>
+
+            <div>
               <h3 className="text-lg font-semibold mb-2">Uso</h3>
               <section className="space-y-4 mb-8">
                 <CodeBlock

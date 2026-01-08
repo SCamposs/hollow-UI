@@ -23,9 +23,8 @@ export function AppLayout({ children }: AppLayoutProps) {
 
   return (
     <div className="min-h-screen bg-background flex flex-col">
-      {/* Header */}
       <header className="border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-        <div className="container mx-auto px-12 py-4">
+        <div className="container mx-auto px-4 md:px-12 py-4">
           <div className="flex items-center justify-between">
             <Link href="/" className="flex items-center flex-col">
               <div className="flex items-center -translate-x-4.5">
@@ -34,36 +33,36 @@ export function AppLayout({ children }: AppLayoutProps) {
                   alt="hollow-UI logo"
                   width={281}
                   height={281}
-                  className="h-9 w-auto mr-1 translate-y-1 dark:hidden block"
+                  className="h-8 md:h-9 w-auto mr-1 ml-2 md:ml-0 translate-y-1 dark:hidden block"
                 />
                 <Image
                   src="/just-logo-white.png"
                   alt="hollow-UI white logo"
                   width={281}
                   height={281}
-                  className="h-9 w-auto mr-1 translate-y-1 hidden dark:block"
+                  className="h-8 md:h-9 w-auto mr-1 ml-2 md:ml-0 translate-y-1 hidden dark:block"
                 />
                 <Image
                   src="/just-name.png"
                   alt="hollow-UI"
                   width={452}
                   height={66}
-                  className="w-38 h-auto translate-y-0.5 dark:hidden"
+                  className="w-32 md:w-38 h-auto translate-y-0.5 dark:hidden"
                 />
                 <Image
                   src="/just-name-white.png"
                   alt="hollow-UI"
                   width={452}
                   height={66}
-                  className="w-38 h-auto hidden dark:block "
+                  className="w-32 md:w-38 h-auto hidden dark:block "
                 />
               </div>
 
-              <p className="text-xs text-muted-foreground">
+              <p className="text-xs text-muted-foreground hidden md:block">
                 Por Ítalo Soares Campos
               </p>
             </Link>
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-2 md:space-x-3">
               <BasicThemeToggleHeader />
               <Link
                 href="https://github.com/SCamposs/hollow-UI#hollow-UI"
@@ -75,6 +74,7 @@ export function AppLayout({ children }: AppLayoutProps) {
                   size="sm"
                   className="hover:bg-primary"
                   title="Repositório do hollow-UI no GitHub atualmente privado"
+                  disabled
                 >
                   <FaGithub className="mr-2 h-4 w-4" />
                   GitHub

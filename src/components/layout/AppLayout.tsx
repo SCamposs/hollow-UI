@@ -62,7 +62,7 @@ export function AppLayout({ children }: AppLayoutProps) {
                 Por Ítalo Soares Campos
               </p>
             </Link>
-            <div className="flex items-center space-x-2 md:space-x-3">
+            <div className="flex items-center space-x-1 md:space-x-3">
               <BasicThemeToggleHeader />
               <Link
                 href="https://github.com/SCamposs/hollow-UI#hollow-UI"
@@ -76,9 +76,9 @@ export function AppLayout({ children }: AppLayoutProps) {
                   title="Repositório do hollow-UI no GitHub atualmente privado"
                   disabled
                 >
-                  <FaGithub className="mr-2 h-4 w-4" />
-                  GitHub
-                  <LockIcon className="ml-2 h-4 w-4" />
+                  <FaGithub className="h-4 w-4" />
+                  <span className="hidden sm:inline ml-1">GitHub</span>
+                  <LockIcon className="hidden sm:inline  h-4 w-4" />
                 </Button>
               </Link>
               <Badge variant="outline" className="text-xs">

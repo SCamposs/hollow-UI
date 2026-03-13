@@ -4,20 +4,63 @@ import {
   getAllComponents,
   getComponentWithDependencies,
 } from "../utils/registry.js";
+import { init } from "./init.js";
 import {
   writeFile,
   fileExists,
   readFile,
   resolveComponentPath,
   installDependencies,
+  getProjectRoot,
 } from "../utils/fs.js";
 import path from "path";
 import chalk from "chalk";
+
+const HOLLOW_UI_TOKEN_MARKER = "/* hollow-UI Design Tokens */";
+const GLOBALS_SEARCH_PATHS = [
+  ["src", "app", "globals.css"],
+  ["app", "globals.css"],
+  ["src", "styles", "globals.css"],
+  ["styles", "globals.css"],
+  ["src", "index.css"],
+  ["src", "globals.css"],
+];
+
+async function isProjectInitialized(): Promise<boolean> {
+  const projectRoot = getProjectRoot();
+  const utilsPath = path.join(projectRoot, "src", "lib", "utils.ts");
+
+  if (!(await fileExists(utilsPath))) {
+    return false;
+  }
+
+  for (const parts of GLOBALS_SEARCH_PATHS) {
+    const globalsPath = path.join(projectRoot, ...parts);
+    if (!(await fileExists(globalsPath))) {
+      continue;
+    }
+
+    const content = await readFile(globalsPath);
+    if (content.includes(HOLLOW_UI_TOKEN_MARKER)) {
+      return true;
+    }
+  }
+
+  return false;
+}
 
 export async function add(
   components: string[] = [],
   options: { all?: boolean; overwrite?: boolean } = {}
 ) {
+  const isInitialized = await isProjectInitialized();
+
+  if (!isInitialized) {
+    logger.warn("Pré-setup não encontrado. Executando 'hollow-ui init' automaticamente...");
+    logger.break();
+    await init({ yes: true });
+  }
+
   if (options.all) {
     components = getAllComponents();
     logger.info("Adicionando todos os componentes...");

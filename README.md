@@ -35,16 +35,20 @@ hollow-UI offers **two ways of usage** to suit different needs:
 Copy only the components you need directly into your project:
 
 ```bash
-# 1. Initialize configuration (first time - REQUIRED)
+# 0. Pre-use setup (REQUIRED before first add)
+#    (init and setup do the same thing)
 npx @scmposs/hollow-ui init
+npx @scmposs/hollow-ui setup
 
-# 2. Add specific components
+# 1. Add specific components
 npx @scmposs/hollow-ui add button
 npx @scmposs/hollow-ui add card badge
 
-# 3. List all available components
+# 2. List all available components
 npx @scmposs/hollow-ui list
 ```
+
+If you run `add` without pre-setup, the CLI now runs `init` automatically.
 
 **What does `init` do?**
 

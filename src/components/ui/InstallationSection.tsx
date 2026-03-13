@@ -18,7 +18,8 @@ export function InstallationSection({
           <div className="space-y-2">
             <CodeBlock
               title="1. Inicializar (primeira vez)"
-              code="npx @scmposs/hollow-ui init"
+              code={`npx @scmposs/hollow-ui init
+npx @scmposs/hollow-ui setup`}
             />
             <CodeBlock
               title="2. Adicionar componente"
@@ -26,10 +27,13 @@ export function InstallationSection({
             />
           </div>
           <p className="text-sm text-muted-foreground mt-2">
-            O comando{" "}
+            Os comandos{" "}
             <code className="px-1.5 py-0.5 bg-muted rounded text-xs">init</code>{" "}
-            configura seu projeto (necessário apenas uma vez). O componente será
-            copiado para o seu projeto com todas as dependências necessárias.
+            e{" "}
+            <code className="px-1.5 py-0.5 bg-muted rounded text-xs">setup</code>{" "}
+            fazem o pré-setup (necessário apenas uma vez). Se você rodar{" "}
+            <code className="px-1.5 py-0.5 bg-muted rounded text-xs">add</code>{" "}
+            sem isso, a CLI executa o setup automaticamente.
           </p>
         </div>
         <div>

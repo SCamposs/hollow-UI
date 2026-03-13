@@ -19,6 +19,12 @@ program
   .action(init);
 
 program
+  .command("setup")
+  .description("Alias para init (pré-setup do hollow-UI)")
+  .option("-y, --yes", "Pular confirmações e usar valores padrão")
+  .action(init);
+
+program
   .command("add")
   .description("Adiciona um componente ao seu projeto")
   .argument("[components...]", "Nome dos componentes para adicionar")

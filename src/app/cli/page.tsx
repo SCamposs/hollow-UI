@@ -46,7 +46,7 @@ export default function CLIPage() {
                 Início Rápido
               </CardTitle>
               <CardDescription>
-                Comece a usar a CLI em 3 passos simples
+                Comece a usar a CLI em 3 passos simples (com setup pre-uso)
               </CardDescription>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -59,7 +59,9 @@ export default function CLIPage() {
                 </h4>
                 <CodeBlock
                   title="Execute apenas uma vez"
-                  code="npx @scmposs/hollow-ui init"
+                  code={`npx @scmposs/hollow-ui init
+# ou (alias)
+npx @scmposs/hollow-ui setup`}
                 />
                 <p className="text-sm text-muted-foreground mt-2">
                   Configura seu projeto criando arquivos necessários como{" "}
@@ -85,7 +87,10 @@ export default function CLIPage() {
                   <code className="px-1.5 py-0.5 bg-muted rounded text-xs">
                     src/components/ui/
                   </code>{" "}
-                  com todas as dependências
+                  com todas as dependências. Se o pré-setup não tiver sido
+                  executado, o comando <code className="px-1.5 py-0.5 bg-muted rounded text-xs">add</code>{" "}
+                  roda <code className="px-1.5 py-0.5 bg-muted rounded text-xs">init</code>{" "}
+                  automaticamente.
                 </p>
               </div>
 
@@ -118,14 +123,19 @@ export function MyComponent() {
                 <CardHeader>
                   <CardTitle className="flex items-center gap-2 text-lg">
                     <CheckCircle className="w-5 h-5 text-green-500" />
-                    init
+                    init / setup
                   </CardTitle>
                   <CardDescription>
                     Inicializa a configuração do hollow-UI no seu projeto
+                    (setup é alias)
                   </CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <CodeBlock title="Uso" code="npx @scmposs/hollow-ui init" />
+                  <CodeBlock
+                    title="Uso"
+                    code={`npx @scmposs/hollow-ui init
+npx @scmposs/hollow-ui setup`}
+                  />
                   <div className="mt-4">
                     <p className="text-sm font-medium mb-2">O que faz:</p>
                     <ul className="list-disc list-inside text-sm text-muted-foreground space-y-1">
@@ -182,6 +192,11 @@ export function MyComponent() {
                       <CodeBlock code="npx @scmposs/hollow-ui add button card badge input" />
                     </div>
                   </div>
+                  <p className="text-sm text-muted-foreground mt-3">
+                    Se o projeto ainda não tiver o pré-setup, o comando executa
+                    <code className="px-1.5 py-0.5 bg-muted rounded text-xs"> init </code>
+                    automaticamente antes de adicionar os componentes.
+                  </p>
                   <div className="mt-4">
                     <p className="text-sm font-medium mb-2">Opções:</p>
                     <ul className="text-sm text-muted-foreground space-y-1">
@@ -304,11 +319,15 @@ export function MyComponent() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-sm text-muted-foreground">
-                    Não! O comando{" "}
+                    Não! Os comandos{" "}
                     <code className="px-1.5 py-0.5 bg-muted rounded text-xs">
                       init
                     </code>{" "}
-                    precisa ser executado apenas uma vez por projeto para
+                    e{" "}
+                    <code className="px-1.5 py-0.5 bg-muted rounded text-xs">
+                      setup
+                    </code>{" "}
+                    precisam ser executados apenas uma vez por projeto para
                     configurar os arquivos iniciais.
                   </p>
                 </CardContent>

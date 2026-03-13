@@ -110,6 +110,7 @@ export {
 export { Navigation, type NavigationItem } from "./registry/ui/Navigation";
 export { StatusBadge } from "./registry/ui/StatusBadge";
 export { HeaderButton } from "./registry/ui/HeaderButton";
+export { NavRail, type NavRailItem, type NavRailProps } from "./registry/ui/NavRail";
 
 // Utility functions
 export { cn } from "./lib/utils";

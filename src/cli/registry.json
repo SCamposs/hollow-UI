@@ -372,5 +372,23 @@
     "dependencies": ["clsx", "tailwind-merge", "lucide-react"],
     "registryDependencies": ["button", "label"],
     "type": "components:ui"
+  },
+  "nav-rail": {
+    "name": "nav-rail",
+    "files": [
+      {
+        "path": "components/ui/nav-rail.tsx",
+        "content": "registry/ui/NavRail.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": [
+      "class-variance-authority",
+      "clsx",
+      "tailwind-merge",
+      "lucide-react"
+    ],
+    "registryDependencies": [],
+    "type": "components:ui"
   }
 }

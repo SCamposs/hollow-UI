@@ -66,6 +66,7 @@ const sidebarData: SidebarGroup[] = [
       { title: "Input", href: "/components/input" },
       { title: "Label", href: "/components/label" },
       { title: "Multi Select", href: "/components/multi-select", isNew: true },
+      { title: "Nav Rail", href: "/components/nav-rail", isNew: true },
       { title: "Navigation", href: "/components/navigation" },
       { title: "Popover", href: "/components/popover", isNew: true },
       { title: "Scroll Area", href: "/components/scroll-area", isNew: true },

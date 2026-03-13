@@ -26,7 +26,7 @@ export async function list() {
     ) {
       categories["Formulários"].push(name);
     } else if (
-      ["navigation", "header", "footer", "header-button"].includes(name)
+      ["navigation", "header", "footer", "header-button", "nav-rail"].includes(name)
     ) {
       categories["Navegação"].push(name);
     } else if (["dialog", "popover", "sonner", "status-badge"].includes(name)) {

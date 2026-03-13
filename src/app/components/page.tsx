@@ -211,6 +211,14 @@ const components = [
     tags: ["navigation", "menu", "responsive"],
   },
   {
+    name: "NavRail",
+    description:
+      "Trilho de navegação vertical colapsável com suporte a mobile e variantes de estilo.",
+    href: "/components/nav-rail",
+    category: "layout",
+    tags: ["navigation", "sidebar", "collapsible", "rail"],
+  },
+  {
     name: "StatusBadge",
     description:
       "Badge de status com ícones e cores diferenciadas por contexto.",

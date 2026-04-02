@@ -29,7 +29,10 @@ export interface MultiSelectOption {
   disabled?: boolean;
 }
 
-interface MultiSelectProps {
+export interface MultiSelectProps extends Omit<
+  React.ComponentPropsWithoutRef<typeof Button>,
+  "value" | "onChange" | "size" | "children"
+> {
   options: MultiSelectOption[];
   value?: string[];
   onValueChange?: (value: string[]) => void;
@@ -38,8 +41,6 @@ interface MultiSelectProps {
   searchPlaceholder?: string;
   emptyMessage?: string;
   maxDisplay?: number;
-  className?: string;
-  disabled?: boolean;
   size?: "sm" | "default";
 }
 
@@ -60,15 +61,23 @@ function MultiSelect({
   const [open, setOpen] = React.useState(false);
   const [searchValue, setSearchValue] = React.useState("");
 
+  const handleOpenChange = (isOpen: boolean) => {
+    setOpen(isOpen);
+
+    if (!isOpen) {
+      setSearchValue("");
+    }
+  };
+
   const selectedOptions = options.filter((option) =>
-    value.includes(option.value)
+    value.includes(option.value),
   );
 
   // Filtrar opções apenas pela busca, não remover as selecionadas
   const filteredOptions = options.filter(
     (option) =>
       searchValue === "" ||
-      option.label.toLowerCase().includes(searchValue.toLowerCase())
+      option.label.toLowerCase().includes(searchValue.toLowerCase()),
   );
 
   const handleSelect = (optionValue: string) => {
@@ -84,9 +93,10 @@ function MultiSelect({
   };
 
   return (
-    <Popover open={open} onOpenChange={setOpen} modal={true}>
+    <Popover open={open} onOpenChange={handleOpenChange} modal={true}>
       <PopoverTrigger asChild>
         <Button
+          type="button"
           variant="outline"
           role="combobox"
           aria-expanded={open}
@@ -94,7 +104,7 @@ function MultiSelect({
             "w-full justify-between min-h-9 h-auto py-2 px-3 hover:bg-muted group",
             selectedOptions.length > 0 && "text-left",
             size === "sm" && "min-h-8",
-            className
+            className,
           )}
           disabled={disabled}
           {...props}
@@ -115,6 +125,10 @@ function MultiSelect({
                       role="button"
                       tabIndex={0}
                       className="ml-0.5 hover:bg-muted-foreground/20 rounded-sm p-0.5 transition-colors cursor-pointer inline-flex"
+                      onMouseDown={(e) => {
+                        e.preventDefault();
+                        e.stopPropagation();
+                      }}
                       onClick={(e) => {
                         e.stopPropagation();
                         handleRemove(option.value);

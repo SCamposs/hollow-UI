@@ -198,6 +198,19 @@
     "registryDependencies": [],
     "type": "components:ui"
   },
+  "command": {
+    "name": "command",
+    "files": [
+      {
+        "path": "components/ui/command.tsx",
+        "content": "registry/ui/command.tsx",
+        "type": "registry:ui"
+      }
+    ],
+    "dependencies": ["clsx", "tailwind-merge", "lucide-react", "cmdk"],
+    "registryDependencies": ["dialog"],
+    "type": "components:ui"
+  },
   "sonner": {
     "name": "sonner",
     "files": [
